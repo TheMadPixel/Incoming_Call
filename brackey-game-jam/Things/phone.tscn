@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://cu7h5r6xl2o4d"]
+
+[ext_resource type="Script" uid="uid://dh0b0ytmpwxfm" path="res://Things/phone.gd" id="1_a5fe5"]
+[ext_resource type="Texture2D" uid="uid://bvb61eg4ctslb" path="res://Assets/Image/uicellphone.svg" id="2_n3l84"]
+[ext_resource type="Texture2D" uid="uid://blvq0h63gsmq1" path="res://Assets/Image/accept.svg" id="3_8mhrp"]
+[ext_resource type="FontFile" uid="uid://b8uyyc6jwwogv" path="res://Assets/Image/bytebounce/ByteBounce.ttf" id="4_8o6h7"]
+[ext_resource type="Texture2D" uid="uid://cyumq66bwhjkp" path="res://Assets/Image/uicellphonecaller.svg" id="5_veo24"]
+[ext_resource type="AudioStream" uid="uid://cviieo84dgbgb" path="res://Assets/Sound/freesound_community-cell-phone-vibrate-high-quality-34034.mp3" id="6_n3l84"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wgif1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krr40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kqlpm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f0iq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d3hwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg633"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xv4ap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m8rud"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3gs2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uusg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hv7tr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2km0b"]
+font = ExtResource("4_8o6h7")
+font_size = 160
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wgif1"]
+font = ExtResource("4_8o6h7")
+font_size = 150
+
+[node name="PhoneUI" type="CanvasLayer" unique_id=814777203]
+scale = Vector2(3.5, 3.5)
+transform = Transform2D(3.5, 0, 0, 3.5, 0, 0)
+
+[node name="Phone" type="Control" parent="." unique_id=843119434 node_paths=PackedStringArray("incoming_caller", "incoming_caller_label")]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_left = 414.28574
+offset_top = 161.42856
+offset_right = 549.619
+offset_bottom = 477.0953
+script = ExtResource("1_a5fe5")
+incoming_caller = NodePath("IncomingCaller")
+incoming_caller_label = NodePath("IncomingCaller/Label")
+
+[node name="PhoneBg" type="Sprite2D" parent="Phone" unique_id=1099840861]
+z_index = 10
+position = Vector2(73.66667, 191.33334)
+scale = Vector2(8, 8)
+texture = ExtResource("2_n3l84")
+
+[node name="Notif1" type="ColorRect" parent="Phone/PhoneBg" unique_id=1379410921]
+z_index = 20
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.458334
+offset_top = -5.5
+offset_right = -11.624998
+offset_bottom = -34.166668
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Accept" type="Sprite2D" parent="Phone/PhoneBg/Notif1" unique_id=652159155]
+z_index = 10
+position = Vector2(7.75, 1.6666641)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("3_8mhrp")
+
+[node name="PhonePopup2" type="Button" parent="Phone/PhoneBg/Notif1" unique_id=275203060]
+z_index = 1000
+z_as_relative = false
+layout_mode = 0
+offset_left = 6.8333426
+offset_top = 0.6666584
+offset_right = 9.708343
+offset_bottom = 3.6249924
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wgif1")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_krr40")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kqlpm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8f0iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d3hwo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xg633")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xv4ap")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_m8rud")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3gs2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2uusg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hv7tr")
+
+[node name="CallerLabel" type="Label" parent="Phone/PhoneBg/Notif1" unique_id=1065054372]
+z_index = 20
+texture_filter = 2
+texture_repeat = 1
+layout_mode = 0
+offset_left = 0.45834097
+offset_top = 1.2083282
+offset_right = 861.4583
+offset_bottom = 264.2083
+scale = Vector2(0.006, 0.01)
+theme_override_font_sizes/font_size = 32
+text = "DAniel"
+label_settings = SubResource("LabelSettings_2km0b")
+
+[node name="CallerLabel2" type="Label" parent="Phone/PhoneBg/Notif1" unique_id=261569718]
+z_index = 20
+texture_filter = 2
+texture_repeat = 1
+layout_mode = 0
+offset_left = 0.4609375
+offset_top = 0.45825195
+offset_right = 861.46094
+offset_bottom = 263.45825
+scale = Vector2(0.006, 0.01)
+theme_override_font_sizes/font_size = 32
+text = "Incoming call
+"
+label_settings = SubResource("LabelSettings_2km0b")
+
+[node name="PhonePopup" type="Button" parent="Phone/PhoneBg" unique_id=915439851]
+z_index = 5
+z_as_relative = false
+offset_left = -8.000004
+offset_top = -16.0
+offset_right = 7.999996
+offset_bottom = -7.4166718
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wgif1")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_krr40")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kqlpm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8f0iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d3hwo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xg633")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xv4ap")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_m8rud")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3gs2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2uusg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hv7tr")
+
+[node name="Time" type="Label" parent="Phone" unique_id=1933480193]
+z_index = 10
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 30.666473
+offset_top = 86.0
+offset_right = 321.66647
+offset_bottom = 190.0
+scale = Vector2(0.3, 0.3)
+theme_override_font_sizes/font_size = 32
+text = "00:30"
+label_settings = SubResource("LabelSettings_wgif1")
+horizontal_alignment = 1
+
+[node name="IncomingCaller" type="Control" parent="Phone" unique_id=2048628362]
+visible = false
+anchors_preset = 0
+offset_left = 10.000072
+offset_top = 63.666626
+offset_right = 50.000072
+offset_bottom = 103.666626
+
+[node name="Uicellphonecaller" type="Sprite2D" parent="Phone/IncomingCaller" unique_id=1097892013]
+z_index = 100
+position = Vector2(63.666748, 127.333405)
+scale = Vector2(8, 8)
+texture = ExtResource("5_veo24")
+
+[node name="Label" type="Label" parent="Phone/IncomingCaller" unique_id=1708746480]
+z_index = 4096
+layout_mode = 0
+offset_left = 20.333344
+offset_top = 20.0
+offset_right = 239.33334
+offset_bottom = 89.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_8o6h7")
+theme_override_font_sizes/font_size = 100
+text = "Daniel"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Phone" unique_id=529215253]
+stream = ExtResource("6_n3l84")
+volume_db = 1.0
+bus = &"SFX"
+parameters/looping = true
+
+[connection signal="pressed" from="Phone/PhoneBg/Notif1/PhonePopup2" to="Phone" method="_on_notif_1_accept_pressed"]
+[connection signal="pressed" from="Phone/PhoneBg/PhonePopup" to="Phone" method="_on_phone_pressed"]

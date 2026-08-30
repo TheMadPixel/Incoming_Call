@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://h8g64g320ugo"]
+
+[ext_resource type="Script" uid="uid://5nbwmvtdvtlb" path="res://Rooms/door.gd" id="1_w7mep"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wgif1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krr40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kqlpm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f0iq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d3hwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg633"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xv4ap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3gs2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uusg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hv7tr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ugiki"]
+
+[node name="Door" type="Button" unique_id=1360932237]
+offset_right = 120.0
+offset_bottom = 240.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wgif1")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_krr40")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kqlpm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8f0iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d3hwo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xg633")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xv4ap")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_g3gs2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2uusg")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hv7tr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ugiki")
+script = ExtResource("1_w7mep")
+
+[node name="DoorPosition" type="Marker2D" parent="." unique_id=920576379]
+position = Vector2(60, 192)
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

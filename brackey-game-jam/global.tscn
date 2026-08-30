@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bf83dcpn3agof"]
+
+[ext_resource type="Script" uid="uid://clx2uev0ock6a" path="res://global.gd" id="1_6q3x5"]
+[ext_resource type="AudioStream" uid="uid://hwpqadwkg0ro" path="res://Assets/Sound/freesound_community-single-pistol-gunshot-3-101923.mp3" id="2_74nqk"]
+[ext_resource type="AudioStream" uid="uid://c8j8rgyoephrx" path="res://Assets/Sound/freesound_community-rain-from-inside-car-52047 (1).mp3" id="2_qxp0b"]
+[ext_resource type="AudioStream" uid="uid://2apj02rekwmk" path="res://Assets/Sound/dragon-studio-open-and-closed-door-405452.mp3" id="3_2wtbm"]
+[ext_resource type="AudioStream" uid="uid://b0s1uk3ke05bn" path="res://Assets/Sound/soundreality-footsteps-walking-boots-parquet-1-420135.mp3" id="5_ol57v"]
+[ext_resource type="AudioStream" uid="uid://da14g5pakmul8" path="res://Assets/Sound/universfield-fast-knocking-on-door-352704 (1).mp3" id="6_gfa4i"]
+
+[node name="Global" type="Node" unique_id=922711009]
+script = ExtResource("1_6q3x5")
+
+[node name="gunshot" type="AudioStreamPlayer" parent="." unique_id=152694564]
+stream = ExtResource("2_74nqk")
+
+[node name="FreesoundCommunityRainFromInsideCar52047(1)" type="AudioStreamPlayer" parent="." unique_id=100729920]
+stream = ExtResource("2_qxp0b")
+volume_db = 7.5
+autoplay = true
+bus = &"rain"
+parameters/looping = true
+
+[node name="DragonStudioOpenAndClosedDoor405452" type="AudioStreamPlayer" parent="." unique_id=1847176995]
+stream = ExtResource("3_2wtbm")
+
+[node name="footsteps" type="AudioStreamPlayer" parent="." unique_id=925345026]
+stream = ExtResource("5_ol57v")
+
+[node name="knocking" type="AudioStreamPlayer" parent="." unique_id=1270310254]
+stream = ExtResource("6_gfa4i")
+
+[node name="knocking_one_shot" type="AudioStreamPlayer" parent="." unique_id=387746332]
+stream = ExtResource("6_gfa4i")

@@ -1,0 +1,598 @@
+[gd_scene format=4 uid="uid://c7stkgqvp4m6c"]
+
+[ext_resource type="Script" uid="uid://buqrcrexvwhbd" path="res://Rooms/bedroom.gd" id="1_5l16d"]
+[ext_resource type="Texture2D" uid="uid://2qspqt7etjno" path="res://Assets/Image/floorboards.svg" id="1_wfih8"]
+[ext_resource type="Texture2D" uid="uid://db33ecdpbnfih" path="res://Assets/Image/wallpaper.svg" id="2_87vvl"]
+[ext_resource type="Texture2D" uid="uid://u4toxgjk580h" path="res://Assets/Image/walltop.svg" id="3_3q6ya"]
+[ext_resource type="Texture2D" uid="uid://c0no0lpxoqmqm" path="res://Assets/Image/door.svg" id="4_2c4pk"]
+[ext_resource type="Texture2D" uid="uid://ktsbwd0nvfjc" path="res://Assets/Image/walltopcorner.svg" id="5_cer0n"]
+[ext_resource type="Texture2D" uid="uid://dr4brwofy86ep" path="res://Assets/Image/picture.svg" id="6_50wqd"]
+[ext_resource type="Texture2D" uid="uid://rknfsyenwhvv" path="res://Assets/Image/bed.svg" id="6_diev0"]
+[ext_resource type="Shader" uid="uid://oklgmuu0d5ab" path="res://Rooms/TranspEffect.gdshader" id="6_yep8i"]
+[ext_resource type="Texture2D" uid="uid://c5xpjxq4yp5km" path="res://Assets/Image/endtable.svg" id="7_nogxp"]
+[ext_resource type="Script" uid="uid://bu2q345ekjf2" path="res://Rooms/Frame.gd" id="7_st0hl"]
+[ext_resource type="PackedScene" uid="uid://di3v5bmwxvt7p" path="res://Things/player.tscn" id="8_dq2mr"]
+[ext_resource type="Texture2D" uid="uid://bul4n5m588xge" path="res://Assets/Image/worldcellphone.svg" id="9_cer0n"]
+[ext_resource type="Texture2D" uid="uid://dqutkjfekflbh" path="res://Assets/Image/worldcellphone2.svg" id="10_diev0"]
+[ext_resource type="Script" uid="uid://b8esd05tr8i50" path="res://window.gd" id="11_bs012"]
+[ext_resource type="Script" uid="uid://dkf7s1nrlvpxv" path="res://Rooms/world_cell_phone.gd" id="11_nogxp"]
+[ext_resource type="Texture2D" uid="uid://0htsvln3n5x8" path="res://Assets/Image/window1.svg" id="12_345bo"]
+[ext_resource type="Texture2D" uid="uid://bg5yiq78fc6r5" path="res://Assets/Image/wallpaperwindow.svg" id="12_j1bn2"]
+[ext_resource type="Texture2D" uid="uid://c34py16g5lgf0" path="res://Assets/Image/lightswitchoff.svg" id="12_y7elx"]
+[ext_resource type="Texture2D" uid="uid://dh8v5bjk1p0k0" path="res://Assets/Image/window2.svg" id="13_j1bn2"]
+[ext_resource type="Texture2D" uid="uid://exfrhsv8slpl" path="res://Assets/Image/lightswitchon.svg" id="13_yep8i"]
+[ext_resource type="Script" uid="uid://cgylhrts32awb" path="res://Rooms/light_switch.gd" id="14_5l16d"]
+[ext_resource type="Texture2D" uid="uid://dtequaxi3a3qw" path="res://Assets/Image/window3.svg" id="14_50wqd"]
+[ext_resource type="Script" uid="uid://dhg3pg16b7it2" path="res://Rooms/doorbd.gd" id="23_j1bn2"]
+[ext_resource type="Script" uid="uid://do1kkq34chu47" path="res://Rooms/door_lock.gd" id="24_j1bn2"]
+[ext_resource type="Texture2D" uid="uid://bpehb7kjjr3og" path="res://Assets/Image/tvremote.svg" id="26_cird1"]
+[ext_resource type="AudioStream" uid="uid://ckvex02s7y6vc" path="res://Assets/Sound/freesound_community-lock-the-door-46014.mp3" id="26_cx48d"]
+[ext_resource type="Script" uid="uid://dbjtqv6inr8h1" path="res://Rooms/tvremote.gd" id="27_cx48d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_st0hl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_345bo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_j1bn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_50wqd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uusg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ugiki"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_228yi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vw3g3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cttv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t2ahn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l31rt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sv4m5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6phd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xnwxy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_at3f6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n1fe5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q35rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ew8rn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8bww"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g05cb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jp4py"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jrvl3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k81ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mhsmx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcr02"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_epxx3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yep8i"]
+texture = ExtResource("1_wfih8")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5l16d"]
+texture = ExtResource("2_87vvl")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7aae4"]
+texture = ExtResource("3_3q6ya")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, 3.057598, 8, 3.057598, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57jio"]
+texture = ExtResource("4_2c4pk")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_swd4x"]
+texture = ExtResource("5_cer0n")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bs012"]
+texture = ExtResource("5_cer0n")
+
+[sub_resource type="TileSet" id="TileSet_26wto"]
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_yep8i")
+sources/1 = SubResource("TileSetAtlasSource_5l16d")
+sources/5 = SubResource("TileSetAtlasSource_7aae4")
+sources/6 = SubResource("TileSetAtlasSource_57jio")
+sources/7 = SubResource("TileSetAtlasSource_swd4x")
+sources/8 = SubResource("TileSetAtlasSource_bs012")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wgif1"]
+shader = ExtResource("6_yep8i")
+shader_parameter/player_screen_position = Vector2(0, 0)
+shader_parameter/screen_size = Vector2(0, 0)
+shader_parameter/fade_radius = 275.0
+shader_parameter/edge_softness = 100.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_345bo"]
+texture = ExtResource("1_wfih8")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j1bn2"]
+texture = ExtResource("2_87vvl")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, 2.8777409, 8, 2.8777409, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_26wto"]
+texture = ExtResource("12_j1bn2")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, 3.956892, 8, 4.136751, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50wqd"]
+texture = ExtResource("3_3q6ya")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_st0hl"]
+texture = ExtResource("4_2c4pk")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cird1"]
+texture = ExtResource("5_cer0n")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cx48d"]
+texture = ExtResource("5_cer0n")
+
+[sub_resource type="TileSet" id="TileSet_bs012"]
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_345bo")
+sources/1 = SubResource("TileSetAtlasSource_j1bn2")
+sources/5 = SubResource("TileSetAtlasSource_50wqd")
+sources/6 = SubResource("TileSetAtlasSource_st0hl")
+sources/7 = SubResource("TileSetAtlasSource_cird1")
+sources/8 = SubResource("TileSetAtlasSource_cx48d")
+sources/3 = SubResource("TileSetAtlasSource_26wto")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_345bo"]
+size = Vector2(64, 32.000015)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgif1"]
+size = Vector2(12, 32.000015)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wgif1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cer0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_diev0")
+}],
+"loop": 1,
+"name": &"vibrate",
+"speed": 1.5
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wgif1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krr40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kqlpm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f0iq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d3hwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg633"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xv4ap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m8rud"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3gs2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2uusg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hv7tr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_krr40"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_y7elx")
+}],
+"loop": 1,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_yep8i")
+}],
+"loop": 1,
+"name": &"on",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50wqd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_st0hl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cird1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cx48d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_26wto"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d2ap2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yr4h8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rsgd6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yfx3x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jneiy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qsfcd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xc3tf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2row6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45mb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2ldh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a0xsf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_363x3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iodse"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jeg1k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ka1x7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d37bv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klsf8"]
+
+[node name="Bedroom" type="Node2D" unique_id=743009606]
+script = ExtResource("1_5l16d")
+
+[node name="Decor" type="Node2D" parent="." unique_id=37450986]
+z_index = 3
+position = Vector2(-1340, 630)
+scale = Vector2(1, 0.8)
+
+[node name="Window" type="Node2D" parent="Decor" unique_id=1869557575]
+position = Vector2(5, 0)
+script = ExtResource("11_bs012")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Decor/Window" unique_id=1791439454]
+position = Vector2(2426, 4369.75)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_st0hl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Decor/Window/AnimatedSprite2D" unique_id=257632526]
+
+[node name="WindowInspBox" type="Button" parent="Decor/Window" unique_id=603861115]
+z_index = 4096
+offset_left = 2497.0
+offset_top = -108.75
+offset_right = 2601.0
+offset_bottom = 58.75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2uusg")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ugiki")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_228yi")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_vw3g3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cttv1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_t2ahn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_l31rt")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sv4m5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_q6phd")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_xnwxy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_at3f6")
+
+[node name="Window2" type="Node2D" parent="Decor" unique_id=592332720]
+position = Vector2(-351, 0)
+script = ExtResource("11_bs012")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Decor/Window2" unique_id=2037565273]
+position = Vector2(2426, 4369.75)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_st0hl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Decor/Window2/AnimatedSprite2D" unique_id=1120842461]
+
+[node name="WindowInspBox" type="Button" parent="Decor/Window2" unique_id=1955790033]
+z_index = 4096
+offset_left = 2374.0
+offset_top = -108.75
+offset_right = 2478.0
+offset_bottom = 58.75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2uusg")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ugiki")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_228yi")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_vw3g3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cttv1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_t2ahn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_l31rt")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sv4m5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_q6phd")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_xnwxy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_at3f6")
+
+[node name="Picture" type="Sprite2D" parent="Decor" unique_id=224977902]
+position = Vector2(2771, -496.25)
+rotation = 0.116937056
+scale = Vector2(1.5, 1.5)
+skew = 0.029670598
+texture = ExtResource("6_50wqd")
+
+[node name="Button" type="Button" parent="Decor/Picture" unique_id=1282752161]
+z_index = 4096
+offset_left = -14.434074
+offset_top = -15.987474
+offset_right = -6.4340744
+offset_bottom = -7.9874744
+scale = Vector2(3, 4)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n1fe5")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_q35rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ew8rn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_s8bww")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_g05cb")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jp4py")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_jrvl3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_k81ct")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mhsmx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_vcr02")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_epxx3")
+script = ExtResource("7_st0hl")
+interaction_range = 100000.0
+
+[node name="EnvirormentBelow" type="TileMapLayer" parent="." unique_id=1321778959]
+z_index = -1
+use_parent_material = true
+position = Vector2(33.000004, 195)
+scale = Vector2(7.5, 7.5)
+tile_map_data = PackedByteArray("AAAMAAMABQAAAAAAAFAIAPz/BQAAAAAAABAHAPz/BQAAAAAAABAGAPz/BQAAAAAAABAFAPz/BQAAAAAAABAEAPz/BQAAAAAAABADAPz/BQAAAAAAABADAP//AQAAAAIAAAAEAP//BgAAAAIAAAADAP7/AQAAAAEAAAAEAP7/BgAAAAEAAAAFAP7/AQAAAAEAAAAGAP7/AQAAAAEAAAAMAAEABQAAAAAAAFAMAAAABQAAAAAAAFALAP//AQAAAAIAAAAKAP//AQAAAAIAAAAJAP//AQAAAAIAAAAIAP//AQAAAAIAAAAHAP//AQAAAAIAAAAGAP//AQAAAAIAAAAFAP//AQAAAAIAAAAMAP//BQAAAAAAAFAMAP7/BQAAAAAAAFAMAP3/BQAAAAAAAHALAP3/AQAAAAAAAAAKAP3/AQAAAAAAAAAJAP3/AQAAAAAAAAAIAP3/AQAAAAAAAAAHAP3/AQAAAAAAAAAGAP3/AQAAAAAAAAAFAP3/AQAAAAAAAAAEAP3/BgAAAAAAAAAHAP7/AQAAAAEAAAAIAP7/AQAAAAEAAAAJAP7/AQAAAAEAAAAKAP7/AQAAAAEAAAALAP7/AQAAAAEAAAAMAPz/BwAAAAAAAAALAPz/BQAAAAAAABAKAPz/BQAAAAAAABAJAPz/BQAAAAAAABADAP3/AQAAAAAAAAACAPz/BwAAAAAAAGAMAAIABQAAAAAAAFAMAAQABQAAAAAAAFACAAQABQAAAAAAAGACAAMABQAAAAAAAGACAAIABQAAAAAAAGACAAEABQAAAAAAAGACAAAABQAAAAAAAGACAP//BQAAAAAAAGACAP7/BQAAAAAAAGACAP3/BQAAAAAAAGADAAQAAAAAAAAAAAADAAMAAAAAAAAAAAADAAIAAAAAAAAAAAADAAEAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAIAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAMAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAMAAAAAAAAAAAAJAAIAAAAAAAAAAAAJAAEAAAAAAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAKAAEAAAAAAAAAAAAKAAIAAAAAAAAAAAAKAAMAAAAAAAAAAAAKAAQAAAAAAAAAAAALAAQAAAAAAAAAAAALAAMAAAAAAAAAAAALAAIAAAAAAAAAAAALAAEAAAAAAAAAAAALAAAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_26wto")
+
+[node name="EnvirormentAbove" type="TileMapLayer" parent="." unique_id=1698796181 groups=["overhead"]]
+z_index = 2
+material = SubResource("ShaderMaterial_wgif1")
+position = Vector2(33.000004, 219)
+scale = Vector2(7.5, 6)
+tile_map_data = PackedByteArray("AAALAAIABQAAAAAAAAALAAMAAQAAAAAAAAALAAQAAQAAAAAAAAAKAAIABQAAAAAAAAAKAAMAAQAAAAAAAAAKAAQAAQAAAAEAAAAJAAIABQAAAAAAAAAIAAIABQAAAAAAAAAHAAIABQAAAAAAAAAGAAIABQAAAAAAAAAFAAIABQAAAAAAAAAEAAIABQAAAAAAAAADAAIABQAAAAAAAAADAAMAAQAAAAAAAAADAAQAAQAAAAEAAAAEAAMAAQAAAAAAAAAEAAQAAQAAAAEAAAAFAAMAAwAAAAAAAAAFAAQAAwAAAAEAAAAGAAMAAQAAAAAAAAAGAAQAAQAAAAEAAAAHAAMAAQAAAAAAAAAHAAQAAQAAAAEAAAAIAAMAAQAAAAAAAAAIAAQAAQAAAAEAAAAJAAMAAwAAAAAAAAAJAAQAAwAAAAEAAAADAAUAAQAAAAIAAAAEAAUAAQAAAAIAAAAFAAUAAQAAAAIAAAAGAAUAAQAAAAIAAAAHAAUAAQAAAAIAAAAIAAUAAQAAAAIAAAAJAAUAAQAAAAIAAAAKAAUAAQAAAAIAAAALAAUAAQAAAAIAAAA=")
+tile_set = SubResource("TileSet_bs012")
+
+[node name="Furniture" type="Node2D" parent="." unique_id=575981654]
+
+[node name="Bed" type="StaticBody2D" parent="Furniture" unique_id=241712662]
+scale = Vector2(7.5, 7.5)
+
+[node name="Bed" type="Sprite2D" parent="Furniture/Bed" unique_id=1088162217]
+position = Vector2(164.4, 29.999989)
+texture = ExtResource("6_diev0")
+
+[node name="BedCollision" type="CollisionShape2D" parent="Furniture/Bed" unique_id=1109722621]
+position = Vector2(164.53334, 30.000006)
+shape = SubResource("RectangleShape2D_345bo")
+
+[node name="Endtable" type="StaticBody2D" parent="Furniture" unique_id=517554101]
+position = Vector2(1411, 319)
+scale = Vector2(7.5, 7.5)
+
+[node name="Endtable" type="Sprite2D" parent="Furniture/Endtable" unique_id=215722204]
+position = Vector2(2.2666626, 0)
+texture = ExtResource("7_nogxp")
+
+[node name="EndtableCollision" type="CollisionShape2D" parent="Furniture/Endtable" unique_id=1613495863]
+position = Vector2(2.2666626, -0.2666664)
+shape = SubResource("RectangleShape2D_wgif1")
+
+[node name="Player" parent="." unique_id=1465239761 node_paths=PackedStringArray("overhead_tilemap") groups=["player"] instance=ExtResource("8_dq2mr")]
+z_index = 1
+position = Vector2(1239, 390)
+speed = 350.0
+overhead_tilemap = NodePath("../EnvirormentAbove")
+
+[node name="Interactable" type="Node2D" parent="." unique_id=1557849127]
+
+[node name="WorldCellPhone" type="AnimatedSprite2D" parent="Interactable" unique_id=1800692605]
+z_as_relative = false
+position = Vector2(1049.0001, 206.00002)
+rotation = 1.322079
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_wgif1")
+animation = &"vibrate"
+frame_progress = 0.7548391
+script = ExtResource("11_nogxp")
+interaction_range = 200.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactable/WorldCellPhone" unique_id=2138908237]
+
+[node name="PhoneIntBox" type="Button" parent="Interactable/WorldCellPhone" unique_id=1615317566]
+z_index = 4096
+z_as_relative = false
+offset_left = -4.184568
+offset_top = -7.3068614
+offset_right = 3.815432
+offset_bottom = 6.7019887
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wgif1")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_krr40")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kqlpm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8f0iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d3hwo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xg633")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xv4ap")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_m8rud")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3gs2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_2uusg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hv7tr")
+metadata/_edit_use_anchors_ = true
+
+[node name="LightSwitch" type="AnimatedSprite2D" parent="Interactable" unique_id=882209501]
+z_index = -1
+z_as_relative = false
+position = Vector2(731, 18)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_krr40")
+animation = &"off"
+script = ExtResource("14_5l16d")
+interaction_range = 200.0
+
+[node name="LightSwitchIntBox" type="Button" parent="Interactable/LightSwitch" unique_id=14177219]
+z_index = 4096
+z_as_relative = false
+offset_left = -3.851242
+offset_top = -7.306863
+offset_right = 4.148758
+offset_bottom = 6.7019873
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wgif1")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_krr40")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kqlpm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8f0iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d3hwo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xg633")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xv4ap")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_m8rud")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g3gs2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_2uusg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hv7tr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactable/LightSwitch" unique_id=1146415530]
+
+[node name="ColorRect" type="ColorRect" parent="Interactable/LightSwitch" unique_id=1018160772]
+z_index = 3
+z_as_relative = false
+offset_left = -286.66666
+offset_top = -116.0
+offset_right = 713.3334
+offset_bottom = 302.333
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7529412)
+metadata/_edit_lock_ = true
+
+[node name="Door" type="Button" parent="." unique_id=1360932237]
+offset_left = 514.0
+offset_top = -43.0
+offset_right = 634.0
+offset_bottom = 197.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_50wqd")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_st0hl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cird1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_cx48d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_26wto")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_d2ap2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yr4h8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rsgd6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yfx3x")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jneiy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qsfcd")
+script = ExtResource("23_j1bn2")
+next_level = "uid://dinadcfc17d80"
+door_id = "bedroom"
+next_entrance = "hallway_bedroom"
+
+[node name="DoorPosition" type="Marker2D" parent="Door" unique_id=920576379]
+position = Vector2(60, 192)
+
+[node name="DoorLock" type="Button" parent="." unique_id=861557081 node_paths=PackedStringArray("door")]
+offset_left = 603.0
+offset_top = 45.0
+offset_right = 625.0
+offset_bottom = 68.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_50wqd")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_st0hl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cird1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_cx48d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_26wto")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_d2ap2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yr4h8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rsgd6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yfx3x")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jneiy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qsfcd")
+script = ExtResource("24_j1bn2")
+door = NodePath("../Door")
+
+[node name="DoorPosition" type="Marker2D" parent="DoorLock" unique_id=345568920]
+position = Vector2(60, 192)
+
+[node name="FreesoundCommunityLockTheDoor46014" type="AudioStreamPlayer" parent="DoorLock" unique_id=686760206]
+stream = ExtResource("26_cx48d")
+
+[node name="Button" type="Button" parent="." unique_id=516536824]
+offset_left = 1091.0
+offset_top = 291.0
+offset_right = 1116.0
+offset_bottom = 333.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xc3tf")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2row6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_45mb7")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_h2ldh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_a0xsf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_363x3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_iodse")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jeg1k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ka1x7")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_d37bv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_klsf8")
+script = ExtResource("27_cx48d")
+
+[node name="Tvremote" type="Sprite2D" parent="Button" unique_id=2695450]
+z_index = -1
+position = Vector2(14, 12)
+rotation = 0.093703195
+scale = Vector2(1.2389998, 1)
+skew = 0.08882618
+texture = ExtResource("26_cird1")
+
+[connection signal="gui_input" from="Decor/Window/WindowInspBox" to="Decor/Window" method="_on_window_insp_box_gui_input"]
+[connection signal="gui_input" from="Decor/Window2/WindowInspBox" to="Decor/Window2" method="_on_window_insp_box_gui_input"]
+[connection signal="pressed" from="Decor/Picture/Button" to="Decor/Picture/Button" method="_on_pressed"]
+[connection signal="gui_input" from="Interactable/WorldCellPhone/PhoneIntBox" to="Interactable/WorldCellPhone" method="_on_phone_int_box_gui_input"]
+[connection signal="pressed" from="Interactable/WorldCellPhone/PhoneIntBox" to="Interactable/WorldCellPhone" method="_on_phone_int_box_pressed"]
+[connection signal="pressed" from="Interactable/LightSwitch/LightSwitchIntBox" to="Interactable/LightSwitch" method="_on_light_switch_int_box_pressed"]
+[connection signal="pressed" from="Door" to="Door" method="_on_pressed"]
+[connection signal="pressed" from="DoorLock" to="DoorLock" method="_on_pressed"]
